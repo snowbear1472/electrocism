@@ -1,17 +1,15 @@
 #pragma once
 
-#include <string>
 #include <chrono>
+#include <string>
 #include <vector>
-#include <ctime>
-#include <fstream>
 
 
 namespace electrocism
 {
 	class LogNode final
 	{
-	public:
+	private:
 		std::chrono::system_clock::time_point time;
 		std::string message;
 
@@ -19,14 +17,20 @@ namespace electrocism
 		LogNode( );
 		LogNode( const std::string& message_ );
 
-		const std::string ToString( ) const;
+	public:
+		const std::string ToString( );
 	};
 
 	namespace Manager
 	{
-		std::vector<LogNode> logs;
+		class LogManager final
+		{
+		private:
+			static std::vector<LogNode> logs;
 
-		void log( const std::string& message );
-		void save_log( const std::string& path );
+		public:
+			static void log( const std::string& message );
+			static void save( const std::string& path );
+		};
 	}
 }

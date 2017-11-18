@@ -16,21 +16,33 @@
     <Filter Include="소스 파일\Manager">
       <UniqueIdentifier>{8ef0ee98-4a3a-4943-b485-d3db5598adc0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Manager">
+      <UniqueIdentifier>{4ea366fb-d196-496a-be2e-88401065d0d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util">
+      <UniqueIdentifier>{65f6c9b8-e4e5-4ca8-9cce-40fc83cd4a50}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cc">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="src\Manager\LogManager.cc">
-      <Filter>소스 파일\Manager</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Manager\DisplayManager.hh">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Manager</Filter>
     </ClInclude>
     <ClInclude Include="include\Manager\LogManager.hh">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Manager\ResourceManager.hh">
+      <Filter>헤더 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\StringUtil.hh">
+      <Filter>헤더 파일\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Manager\SoundManager.hh">
+      <Filter>헤더 파일\Manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
